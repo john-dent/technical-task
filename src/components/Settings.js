@@ -1,14 +1,14 @@
 import Setting from './Setting';
 import AddSetting from './AddSetting';
 
-function Settings({ asignees, categories, getSettings }) {
+function Settings({ assignees, categories, getSettings }) {
     return (
         <div>
-            Asignees:
-            {asignees.map((asignee) => (
-                <Setting key={asignee.id} getSettings={getSettings} setting={asignee} settingType="asignees" />
+            Assignees:
+            {assignees.map((assignee) => (
+                <Setting key={assignee.id} getSettings={getSettings} setting={assignee} settingType="assignees" />
             ))}
-            <AddSetting getSettings={getSettings} settingType="asignees" />
+            <AddSetting getSettings={getSettings} settingType="assignees" />
             Categories:
             {categories.map((category) => (
                 <Setting key={category.id} getSettings={getSettings} setting={category} settingType="categories" />
