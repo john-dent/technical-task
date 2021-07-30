@@ -7,7 +7,7 @@ const Setting = ({ settingType, getSettings }) => {
         const newSetting = {
             name: setting
         }
-        console.log(newSetting)
+
         const res = await fetch(`http://localhost:5000/${settingType}`, {
         method: 'POST',
         headers: {

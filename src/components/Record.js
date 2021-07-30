@@ -2,7 +2,6 @@ import { FaPencilAlt } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 
 const Record = ({ record, assignees }) => {
-    console.log(record)
     const assigned = record.recordsWithAssignees.map((assignee) => (
         assignee.assigneeId ? assignees.find(el => el.id === assignee.assigneeId).name : ''
     )).join(' | ')
