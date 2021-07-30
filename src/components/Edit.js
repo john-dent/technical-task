@@ -48,11 +48,10 @@ const Edit = ({ assignees, categories, getRecords }) => {
         })
 
         const data = await res.json()
-        updateAssignees(id)
-        getRecords()
         setTitle(data.title)
         setDescription(data.description)
         setCategory(data.categoryId)
+        updateAssignees(id)
     }
 
     const updateAssignees = async (id) => {
@@ -86,6 +85,8 @@ const Edit = ({ assignees, categories, getRecords }) => {
                 body: JSON.stringify(updatedAssignee),
             })
         ))
+
+        getRecords()
     }
 
     // On form submit
