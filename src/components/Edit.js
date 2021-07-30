@@ -53,8 +53,6 @@ const Edit = ({ assignees, categories, getRecords }) => {
         setTitle(data.title)
         setDescription(data.description)
         setCategory(data.categoryId)
-
-        // setAssignees(Array.from(assigned))
     }
 
     const updateAssignees = async (id) => {
@@ -88,11 +86,6 @@ const Edit = ({ assignees, categories, getRecords }) => {
                 body: JSON.stringify(updatedAssignee),
             })
         ))
-
-
-        getRecords()
-
-        // setAssignees(Array.from(assigned))
     }
 
     // On form submit
