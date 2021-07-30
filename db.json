@@ -1,0 +1,66 @@
+{
+  "records": [
+    {
+      "id": 1,
+      "title": "Complete React apps",
+      "description": "Create a reusable, mobile-first React application.",
+      "categoryId": 1
+    },
+    {
+      "id": 2,
+      "title": "Put bin out",
+      "description": "Recycling bin.",
+      "categoryId": "2"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Work"
+    },
+    {
+      "id": 2,
+      "name": "Home"
+    }
+  ],
+  "assignees": [
+    {
+      "id": 1,
+      "name": "Andy"
+    },
+    {
+      "id": 2,
+      "name": "Hillary"
+    },
+    {
+      "id": 3,
+      "name": "Peter"
+    },
+    {
+      "id": 4,
+      "name": "Chloe"
+    }
+  ],
+  "recordsWithAssignees": [
+    {
+      "assigneeId": 1,
+      "recordId": 2,
+      "id": 1
+    },
+    {
+      "assigneeId": 2,
+      "recordId": 2,
+      "id": 2
+    },
+    {
+      "assigneeId": 4,
+      "recordId": 2,
+      "id": 3
+    },
+    {
+      "assigneeId": 3,
+      "recordId": 2,
+      "id": 4
+    }
+  ]
+}
